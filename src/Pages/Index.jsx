@@ -12,7 +12,7 @@ const Index = () => {
       {/* Color */}
       <div className="flex items-center gap-2 py-2 md:py-5 bg-transparent border border-indigo-500 uppercase px-3 rounded-md">
         <img
-          src="/src/assets/color.svg"
+          src={color}
           alt="icono"
           width="50px"
           height="50px"

@@ -22,7 +22,7 @@ const CategoryIcons = lazy(() => import('./Pages/CategoryIcons'));
 const CategoryAnimations = lazy(() => import('./Pages/CategoryAnimations'));
 const CategorySpinners = lazy(() => import('./Pages/CategorySpinners'));
 const CategoryComponents = lazy(() => import('./Pages/CategoryComponents'));
-
+import Spinner from './Components/Spinner';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<h1></h1>}>
+    <Suspense fallback={<Spinner />}>
       <RouterProvider router={router} />
     </Suspense>
   </React.StrictMode>
