@@ -12,6 +12,7 @@ const Layout = () => {
       <main className="mt-8">
         <Outlet />
       </main>
+      <Footer/>
     </div>
   );
 };
