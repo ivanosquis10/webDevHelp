@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Fira Mono', monospace;
+  color: white;
+  overflow-x: hidden;
+}
+
+.gradiente {
+  background-color: rgb(79, 70, 229);
+  background-image: radial-gradient(
+    at 50% 50%,
+    rgb(15, 23, 42) 0,
+    transparent 98%
+  );
+}
