@@ -1,4 +1,5 @@
 import link from '../assets/externalLink.svg';
+import Imagen from './Imagen';
 
 const CategoryCard = ({ title, urlPage, description, urlTweet }) => {
   return (
@@ -19,14 +20,7 @@ const CategoryCard = ({ title, urlPage, description, urlTweet }) => {
             className="md:text-xl uppercase flex justify-center gap-2 bg-slate-600 rounded p-2 hover:bg-slate-700 hover:text-slate-400 ease-in-out duration-200"
           >
             {`Visita a ${title}`}
-            <img
-              width="25px"
-              height="25px"
-              src={link}
-              alt="logo para el link"
-              className="-mt-1"
-              loading="lazy"
-            />
+            <Imagen w="25" h="25" svg={link} alt="link" sty="-mt-1" />
           </a>
 
           <a
@@ -35,14 +29,7 @@ const CategoryCard = ({ title, urlPage, description, urlTweet }) => {
             className="md:text-xl uppercase flex justify-center gap-2 bg-slate-600 rounded p-2 hover:bg-slate-700 hover:text-slate-400 ease-in-out duration-200"
           >
             Tweet
-            <img
-              width="25px"
-              height="25px"
-              src={link}
-              alt="logo para el link"
-              className="-mt-1"
-              loading="lazy"
-            />
+            <Imagen w="25" h="25" svg={link} alt="link" sty="-mt-1" />
           </a>
         </div>
       </div>

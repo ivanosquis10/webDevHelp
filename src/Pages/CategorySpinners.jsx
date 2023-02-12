@@ -6,7 +6,6 @@ const CategorySpinners = () => {
   return (
     <section className="container mx-auto p-2 mb-5">
       <HeaderCategories heading="Categoria Spinners" />
-
       {dataSpinners.map((data) => (
         <CategoryCard
           key={data.id}
