@@ -34,7 +34,15 @@ const dataColores = [
       'Puedes escoger una gran cantidad de colores y crear familias de colores para tailwind, puedes guardar las familias de colores y ver la mezcla de los diferentes colores en un ejemplo',
     urlTweet: 'https://cutt.ly/p3byZfs',
   },
-];
+  {
+    id: 5,
+    title: 'ColorMagic',
+    urlPage: 'https://colormagic.app/',
+    description:
+      'ColorMagic te permite crear paletas de colores tras escribir alguna palabra en su buscador, utilizando AI genera estas paletas',
+    urlTweet: 'https://colormagic.app/',
+  },
+]
 
 const dataIconos = [
   {
@@ -75,7 +83,7 @@ const dataIconos = [
       'Te provee una cantidad de SVGs de marcas populares, es gratis, con buscador integrado y personalizables',
     urlTweet: 'https://simpleicons.org/',
   },
-];
+]
 
 const dataSpinners = [
   {
@@ -96,7 +104,7 @@ const dataSpinners = [
       'Te provee spinners muy lindos, livianos y facil de personalizar, puro css y gratis',
     urlTweet: 'https://twitter.com/tobiasahlin',
   },
-];
+]
 
 const dataAnimation = [
   {
@@ -135,7 +143,7 @@ const dataAnimation = [
     urlTweet:
       'https://twitter.com/NavisCode/status/1468252964657586178?s=20&t=tBHII23uZR2Stoai6qfaWQ',
   },
-];
+]
 
 const dataHtmlCssComp = [
   {
@@ -157,7 +165,29 @@ const dataHtmlCssComp = [
     urlTweet:
       'https://twitter.com/carmenansio/status/1461409475131330567?s=20&t=Ina92uu2ULRzkLNomc4o7A',
   },
-];
+]
+
+const dataAI = [
+  {
+    id: 1,
+    title: 'resume.io',
+    urlPage: 'https://resume.io/',
+    description:
+      'Te permite generar tu CV a través de entradas que vas colocando y a su vez se va generando una interfaz con la información colocada, puedes acomodarla en el orden que quieras, es muy personalizable',
+    urlTweet:
+      'https://twitter.com/fabioalcocer17/status/1629185438563827712?s=20',
+  },
+
+  {
+    id: 2,
+    title: 'AI2SQL.io',
+    urlPage: 'https://www.ai2sql.io/',
+    description:
+      'Puedes generar consultas SQLS en segundos, también ofrecen comandos que puede ser una herramienta útil para comprender rápidamente la función de un comando específico para una consulta',
+    urlTweet:
+      'https://twitter.com/fabioalcocer17/status/1629185438563827712?s=20',
+  },
+]
 
 export {
   dataColores,
@@ -165,4 +195,5 @@ export {
   dataSpinners,
   dataAnimation,
   dataHtmlCssComp,
-};
+  dataAI,
+}

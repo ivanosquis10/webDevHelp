@@ -1,4 +1,4 @@
-const Imagen = ({ svg, alt, w, h, sty='' }) => {
+const Imagen = ({ svg, alt, w, h, sty = '' }) => {
   return (
     <img
       src={svg}
@@ -8,6 +8,6 @@ const Imagen = ({ svg, alt, w, h, sty='' }) => {
       loading="lazy"
       className={`${sty}`}
     />
-  );
-};
-export default Imagen;
+  )
+}
+export default Imagen

@@ -1,9 +1,10 @@
-import IndexCategoria from '../Components/IndexCategoria';
-import color from '../assets/color.svg';
-import icons from '../assets/icons.svg';
-import animations from '../assets/animations.svg';
-import spinners from '../assets/spinners.svg';
-import htmlcss from '../assets/htmlcss.svg';
+import IndexCategoria from '../Components/IndexCategoria'
+import color from '../assets/color.svg'
+import icons from '../assets/icons.svg'
+import animations from '../assets/animations.svg'
+import spinners from '../assets/spinners.svg'
+import htmlcss from '../assets/htmlcss.svg'
+import ai from '../assets/ai.svg'
 
 const Index = () => {
   return (
@@ -47,8 +48,16 @@ const Index = () => {
         description="Componentes de ccs, ej: botones, checkboxes, etc"
         img={htmlcss}
       />
-    </div>
-  );
-};
 
-export default Index;
+      {/* AI */}
+      <IndexCategoria
+        go="/category-ia/"
+        categoria="ai"
+        description="Recursos relacionados con la AI"
+        img={ai}
+      />
+    </div>
+  )
+}
+
+export default Index

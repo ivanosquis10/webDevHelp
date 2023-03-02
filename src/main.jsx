@@ -1,29 +1,19 @@
-import React, { lazy, Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import React, { lazy, Suspense } from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-/*
-import Layout from './Components/Layout';
-import Index from './Pages/Index';
+const Layout = lazy(() => import('./Components/Layout'))
+const Index = lazy(() => import('./Pages/Index'))
 
-import CategoryColors from './Pages/CategoryColors';
-import CategoryIcons from './Pages/CategoryIcons';
-import CategoryAnimations from './Pages/CategoryAnimations';
-import CategorySpinners from './Pages/CategorySpinners';
-import CategoryComponents from './Pages/CategoryComponents';
-import Generadorescss from './Components/Generadorescss';
-*/
+const CategoryColors = lazy(() => import('./Pages/CategoryColors'))
+const CategoryIcons = lazy(() => import('./Pages/CategoryIcons'))
+const CategoryAnimations = lazy(() => import('./Pages/CategoryAnimations'))
+const CategorySpinners = lazy(() => import('./Pages/CategorySpinners'))
+const CategoryComponents = lazy(() => import('./Pages/CategoryComponents'))
+const CategoryAI = lazy(() => import('./Pages/CategoryAI'))
 
-const Layout = lazy(() => import('./Components/Layout'));
-const Index = lazy(() => import('./Pages/Index'));
-
-const CategoryColors = lazy(() => import('./Pages/CategoryColors'));
-const CategoryIcons = lazy(() => import('./Pages/CategoryIcons'));
-const CategoryAnimations = lazy(() => import('./Pages/CategoryAnimations'));
-const CategorySpinners = lazy(() => import('./Pages/CategorySpinners'));
-const CategoryComponents = lazy(() => import('./Pages/CategoryComponents'));
-import Spinner from './Components/Spinner';
-import './index.css';
+import Spinner from './Components/Spinner'
+import './index.css'
 
 const router = createBrowserRouter([
   {
@@ -54,9 +44,13 @@ const router = createBrowserRouter([
         path: '/category-componentshtml',
         element: <CategoryComponents />,
       },
+      {
+        path: '/category-ia',
+        element: <CategoryAI />,
+      },
     ],
   },
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -64,4 +58,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={router} />
     </Suspense>
   </React.StrictMode>
-);
+)
