@@ -1,5 +1,5 @@
-import github from '../assets/github.svg';
-import twitter from '../assets/twitter.svg';
+import github from '../assets/github.svg'
+import twitter from '../assets/twitter.svg'
 
 const Footer = () => {
   return (
@@ -38,13 +38,13 @@ const Footer = () => {
             width="30px"
             height="30px"
             src={twitter}
-            alt="logo de github"
+            alt="logo de twitter"
             loading="lazy"
           />
         </a>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
