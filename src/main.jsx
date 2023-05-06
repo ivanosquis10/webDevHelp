@@ -1,18 +1,15 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Index from './Pages/Index'
+import CategoryColors from './Pages/CategoryColors'
+import CategoryIcons from './Pages/CategoryIcons'
+import CategoryAnimations from './Pages/CategoryAnimations'
+import CategorySpinners from './Pages/CategorySpinners'
+import CategoryComponents from './Pages/CategoryComponents'
+import CategoryAI from './Pages/CategoryAI'
+import Layout from './Components/Layout'
 
-const Layout = lazy(() => import('./Components/Layout'))
-const Index = lazy(() => import('./Pages/Index'))
-
-const CategoryColors = lazy(() => import('./Pages/CategoryColors'))
-const CategoryIcons = lazy(() => import('./Pages/CategoryIcons'))
-const CategoryAnimations = lazy(() => import('./Pages/CategoryAnimations'))
-const CategorySpinners = lazy(() => import('./Pages/CategorySpinners'))
-const CategoryComponents = lazy(() => import('./Pages/CategoryComponents'))
-const CategoryAI = lazy(() => import('./Pages/CategoryAI'))
-
-import Spinner from './Components/Spinner'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -54,8 +51,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<Spinner />}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <RouterProvider router={router} />
   </React.StrictMode>
 )
